@@ -1,0 +1,92 @@
+html{
+    background-size: cover;
+}
+
+body{
+    background-color: antiquewhite;
+}
+* {
+    font-family:monospace;
+}
+audio { 
+    width: 350px; 
+    height: 30px;
+}
+
+a { 
+    color: currentColor;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 65px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+    margin: 0px;
+    color: brown;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    border: 3px solid black;
+    border-bottom: none;
+}
+
+#grid ol {
+    border-right: 1px solid black;
+    margin: 0px;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+#grid #article {
+    padding: 20px;
+}
+
+#culumns {
+    column-count: 3;
+    border: 3px solid black;
+    border-top: 1px solid black;
+    column-gap: 5px;
+ 
+}
+
+#culumns figure {
+    display: inline-block;
+    margin: 50px;
+    width: 250px;
+}
+
+#culumns figure img {
+    width: 100%;
+}
+
+@media(max-width:800px) { /* if문과 같음 */
+    #grid {
+        display: block;
+    }
+
+    #grid ol {
+        border-bottom: 1px solid black;
+        border-right: 0px;
+        margin: 0px;
+        font-size: 20px;
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+
+    audio { 
+        width: 300px; 
+    }
+}

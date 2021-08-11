@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PRACTICE - WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="color.js"></script>
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+
+    <input type="button" value="night" onclick="day_night(this)">
+
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <p>
+                <a href="https://opentutorials.org/course/3084/18431" target="_blank"><img src="img/coding.jpg"
+                        width="100%"></a>
+            </p>
+            <p>
+                * Brilliant Giri
+            </p>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0"
+                    allowfullscreen></iframe>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var members = {
+            "no1": "younggil",
+            "no2": "sooho",
+            "no3": "soochan",
+            "no4": "gandi",
+            "no5": "seungbum"
+        };
+
+        for (var i in members)
+            document.write(members[i]+"<br>");
+    </script>
+</body>
+
+</html>
